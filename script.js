@@ -1,16 +1,18 @@
-const startBtn = document.getElementById("startBtn");
-const continueBtn = document.getElementById("continueBtn");
+let currentPage = 1;
 
-startBtn.addEventListener("click", function () {
+function nextPage() {
 
-    document.getElementById("page1").classList.add("hidden");
-    document.getElementById("page2").classList.remove("hidden");
+    // Hide current page
+    document.getElementById("page" + currentPage).classList.remove("active");
 
-});
+    currentPage++;
 
-continueBtn.addEventListener("click", function () {
+    // If last page reached
+    if (currentPage > 9) {
+        currentPage = 9;
+    }
 
-    document.getElementById("page2").classList.add("hidden");
-    document.getElementById("page3").classList.remove("hidden");
+    // Show next page
+    document.getElementById("page" + currentPage).classList.add("active");
 
-});
+}

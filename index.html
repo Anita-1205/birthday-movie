@@ -8,57 +8,50 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="container" id="page1">
-
+<!-- Page 1 -->
+<section id="page1" class="page active">
     <h3>✨ A Cosmic Love Story ✨</h3>
-
     <h1>Happiestttt Birthdayy</h1>
-
     <h2>Akshhh ❤️</h2>
 
     <p>
         Every beautiful love story begins with one unforgettable moment.
     </p>
 
-    <button id="startBtn">
-        🎁 Click Here To Begin Your Birthday Adventure
+    <button onclick="nextPage()">
+        🎁 Click To Start Your Surprise
     </button>
+</section>
 
-</div>
-
-
-<div class="container hidden" id="page2">
+<!-- Page 2 -->
+<section id="page2" class="page">
 
     <h1>🎉 Happy Birthday Panda 🐼</h1>
 
-    <h2>Akshhh ❤️</h2>
-
     <p>
-        Wishing you endless happiness,
-        success,
-        laughter,
-        and lots of love ❤️
+        Today is all about celebrating you.
+        <br><br>
+        I hope this little surprise makes you smile.
     </p>
 
-    <button id="continueBtn">
+    <button onclick="nextPage()">
         Continue →
     </button>
 
-</div>
+</section>
 
-<div class="container hidden" id="page3">
+<!-- Page 3 -->
+<section id="page3" class="page">
 
-    <h1>🚗 Welcome Hero Akshhh</h1>
+    <h1>🚗 Hero Akshhh</h1>
 
-    <h2>The Guardian of My Heart ❤️</h2>
-
-    <img src="photo2.png" width="300" style="border-radius:20px;">
+    <img src="photo2.png" alt="Akshhh" class="photo">
 
     <p>
         Car Lover 🚗<br>
@@ -66,9 +59,123 @@
         Panda 🐼
     </p>
 
-</div>
-    
-    <script src="script.js"></script>
+    <button onclick="nextPage()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- Page 4 -->
+<section id="page4" class="page">
+
+    <h1>❤️ My Favourite Person ❤️</h1>
+
+    <img src="photo1.png" alt="Memory" class="photo">
+
+    <p>
+        Every memory with you
+        is my favourite memory.
+    </p>
+
+    <button onclick="nextPage()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- Page 5 -->
+<section id="page5" class="page">
+
+    <h1>✨ Together Forever ✨</h1>
+
+    <p>
+        No distance,
+        no time,
+        no obstacle
+        can change what I feel.
+    </p>
+
+    <button onclick="nextPage()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- Page 6 -->
+<section id="page6" class="page">
+
+    <h1>🎂 Make A Wish</h1>
+
+    <img src="cake.jpeg" class="photo">
+
+    <p>
+        Close your eyes...
+        <br>
+        Make a wish...
+        <br>
+        Then continue ❤️
+    </p>
+
+    <button onclick="nextPage()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- Page 7 -->
+<section id="page7" class="page">
+
+    <h1>📸 Our Memories</h1>
+
+    <img src="photo1.png" class="photo">
+    <img src="photo2.png" class="photo">
+
+    <button onclick="nextPage()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- Page 8 -->
+<section id="page8" class="page">
+
+    <h1>💌 A Letter For You</h1>
+
+    <p>
+        Thank you for being my happiness,
+        my peace,
+        my smile,
+        and my favourite person.
+    </p>
+
+    <button onclick="nextPage()">
+        Final Surprise →
+    </button>
+
+</section>
+
+<!-- Page 9 -->
+<section id="page9" class="page">
+
+    <h1>❤️ No Matter Where You Are ❤️</h1>
+
+    <h2>I Will Always Choose You</h2>
+
+    <p>
+        Happy Birthday Akshhh ❤️
+        <br><br>
+        Love Always,
+        <br>
+        Anita ❤️
+    </p>
+
+    <button onclick="location.reload()">
+        🔄 Replay
+    </button>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>

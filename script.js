@@ -1,11 +1,7 @@
-const startBtn = document.getElementById("startBtn");
+document.getElementById("startBtn").addEventListener("click", function () {
 
-startBtn.addEventListener("click", () => {
+    document.getElementById("page1").classList.add("hidden");
 
-    // Hide intro
-    document.getElementById("intro").style.display = "none";
-
-    // Show birthday page
-    document.getElementById("birthday").style.display = "flex";
+    document.getElementById("page2").classList.remove("hidden");
 
 });

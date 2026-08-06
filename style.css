@@ -1,92 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-
-margin:0;
-
-background:#090b1d;
-
-font-family:Poppins,sans-serif;
-
-color:white;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-height:100vh;
-
-overflow:hidden;
-
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);
+    color:white;
+    overflow:hidden;
 }
 
-.container{
+.page{
+    width:100%;
+    height:100vh;
 
-text-align:center;
+    display:none;
 
-animation:fade 1s;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 
+    text-align:center;
+
+    padding:40px;
+
+    animation:fade 1s;
 }
 
-.hidden{
-
-display:none;
-
+.active{
+    display:flex;
 }
 
 h1{
-
-font-size:60px;
-
-margin:10px;
-
+    font-size:60px;
+    margin-bottom:20px;
 }
 
 h2{
+    font-size:40px;
+    color:#ffd166;
+    margin-bottom:20px;
+}
 
-font-size:40px;
-
-color:#ff9cff;
-
+h3{
+    font-size:28px;
+    color:#ffb3c6;
+    margin-bottom:20px;
 }
 
 p{
-
-font-size:22px;
-
-max-width:700px;
-
-margin:auto;
-
-line-height:1.8;
-
+    font-size:22px;
+    max-width:700px;
+    line-height:1.8;
+    margin-bottom:35px;
 }
 
 button{
 
-margin-top:40px;
+    padding:18px 45px;
 
-padding:18px 40px;
+    font-size:20px;
 
-font-size:20px;
+    border:none;
 
-border:none;
+    border-radius:50px;
 
-border-radius:40px;
+    background:#ff4d8d;
 
-background:#ff4fd8;
+    color:white;
 
-color:white;
+    cursor:pointer;
 
-cursor:pointer;
-
-transition:.3s;
-
+    transition:.3s;
 }
 
 button:hover{
 
-transform:scale(1.08);
+    transform:scale(1.08);
+
+    background:#ff0066;
+
+}
+
+.photo{
+
+    width:280px;
+
+    border-radius:20px;
+
+    margin:20px;
+
+    box-shadow:0 0 30px rgba(255,255,255,.3);
 
 }
 
@@ -96,7 +101,7 @@ from{
 
 opacity:0;
 
-transform:translateY(40px);
+transform:translateY(50px);
 
 }
 
@@ -110,90 +115,35 @@ transform:translateY(0);
 
 }
 
-/* Animated Stars */
+@media(max-width:768px){
 
-body{
-    background:linear-gradient(180deg,#02030d,#12052e,#04061b);
-}
+h1{
 
-body::before{
-
-content:"";
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background-image:
-radial-gradient(white 1px,transparent 1px);
-
-background-size:60px 60px;
-
-opacity:.35;
-
-animation:moveStars 80s linear infinite;
-
-z-index:-2;
+font-size:40px;
 
 }
 
-body::after{
+h2{
 
-content:"";
-
-position:fixed;
-
-width:900px;
-height:900px;
-
-border-radius:50%;
-
-background:radial-gradient(circle,
-rgba(180,90,255,.35),
-transparent 70%);
-
-top:-250px;
-left:-200px;
-
-filter:blur(100px);
-
-animation:glow 12s ease-in-out infinite alternate;
-
-z-index:-1;
+font-size:28px;
 
 }
 
-@keyframes moveStars{
+p{
 
-from{
-
-transform:translateY(0);
+font-size:18px;
 
 }
 
-to{
+.photo{
 
-transform:translateY(-600px);
-
-}
+width:220px;
 
 }
 
-@keyframes glow{
+button{
 
-from{
-
-transform:translateX(0);
-
-}
-
-to{
-
-transform:translateX(300px);
+width:90%;
 
 }
 
